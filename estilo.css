@@ -38,20 +38,31 @@ header {
 img {
     width: 900px;
     height: auto;
+    display: block;
 }
 
 a {
     color: #08e025;
 }
 
-.conteudo-imagens {
+.banner {
+
+    img {
+        width: 100dvi;
+    }
+}
+
+.conteudo-rodape {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
-    margin: 25px;
-    padding: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
 }
+
+
 
 .filho-direito li {
     position: relative;
@@ -80,6 +91,10 @@ a {
     width: 100%;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
 .container-pai {
 
@@ -98,14 +113,31 @@ a {
     gap: 30px;
 }
 
+.filho-embaixo{
+    img{
+        width: 100%;
+    }
+
+}
+
 .Logo-inicio {
     width: auto;
     height: 90px;
 }
+.img-pai{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.conteudo-i{
+     display: flex;
+     
+}   
 
 .conteudo-geral {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 40px;
     padding: 0px;
@@ -128,7 +160,7 @@ a {
 
 }
 
-.geral-jogos{
+.geral-jogos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +179,8 @@ a {
     background-size: cover;
     background-position: center;
     transition: 0.3s;
-    a{
+
+    a {
         text-decoration: none;
         color: white;
     }
@@ -168,38 +201,38 @@ a {
 }
 
 .rocket {
-    background-image: url("img/Rocket-League.jpg");
+    background-image: url("img/jogos-img/Rocket-League.jpg");
 }
 
 .warzone {
-    background-image: url("img/Warzone.jpg");
+    background-image: url("img/jogos-img/Warzone.jpg");
 }
 
 .fortnite {
-    background-image: url("img/Fortnite.jpg");
+    background-image: url("img/jogos-img/Fortnite.jpg");
 }
 
 .brawl {
-    background-image: url("img/Brawl-Stars.jpg");
+    background-image: url("img/jogos-img/Brawl-Stars.jpg");
 }
 
 .valorant {
-    background-image: url("img/Valorant.jpg");
+    background-image: url("img/jogos-img/Valorant.jpg");
 }
 
 .freefire {
-    background-image: url("img/Free-Fire.jpg");
+    background-image: url("img/jogos-img/Free-Fire.jpg");
 }
 
 
-.conteudo-loja h1{
+.conteudo-loja h1 {
     text-align: center;
     font-size: 60px;
     margin: 40px 0;
 }
 
 
-.produtos{
+.produtos {
     display: grid;
     grid-template-columns: repeat(3, 250px);
 
@@ -209,7 +242,7 @@ a {
     margin-bottom: 60px;
 }
 
-.produto{
+.produto {
     width: 250px;
     height: 350px;
 
@@ -224,20 +257,20 @@ a {
     transition: 0.3s;
 }
 
-.produto:hover{
+.produto:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
     cursor: pointer;
 }
 
-.produto img{
+.produto img {
     width: 100%;
     height: 220px;
 
     object-fit: cover;
 }
 
-.produto h3{
+.produto h3 {
     color: white;
     text-align: center;
 
@@ -247,7 +280,7 @@ a {
     padding: 0 10px;
 }
 
-.produto p{
+.produto p {
     color: #00cc44;
 
     text-align: center;
@@ -258,3 +291,135 @@ a {
     margin-top: auto;
     margin-bottom: 15px;
 }
+.conteudo-home{
+    font-size:30px;
+    margin-bottom:80px;
+    text-align: center;
+}
+
+.conteiner-jogos{
+    display: flex;
+    flex-direction: column;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.rocket-page {
+    padding: 50px 8%;
+}
+
+.rocket-page h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #08e025;
+}
+
+.trio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.player-card {
+    width: 300px;
+    background: white;
+    color: black;
+    border: 2px solid #08e025;
+    overflow: hidden;
+}
+
+.player-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.player-info {
+    padding: 20px;
+}
+
+.player-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.player-info h2 {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.titulos,
+.trofeus {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.titulos h2,
+.trofeus h2 {
+    font-size: 36px;
+    color: #08e025;
+    margin-bottom: 25px;
+}
+
+.titulos ul {
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+}
+
+.titulos li {
+    background: #151515;
+    border: 1px solid #08e025;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.trofeu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.trofeu-card {
+    width: 230px;
+    background: #151515;
+    border: 1px solid #08e025;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.trofeu-card span {
+    font-size: 45px;
+}
+
+.trofeu-card h3 {
+    margin: 15px 0 8px;
+    color: #08e025;
+}
+
+.trofeu-card p {
+    color: #ccc;
+}
+
+
+
+
+
+
