@@ -1,0 +1,34 @@
+body{
+     font-family: Arial, Helvetica, sans-serif; 
+}
+.todo-conteudo{
+    background-color: #08e025;
+    display: flex
+    flex
+}
+.conteudo-principal{
+    background-color: black;
+}
+.rodape{
+    background-color: #08e025;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 30px;
+    color: black;
+
+}
+#center{
+    width: 500px;
+    background-color: #08e025;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+
+}
